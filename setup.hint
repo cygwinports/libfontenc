@@ -1,0 +1,4 @@
+category: X11
+requires: cygwin xproto
+sdesc: "Xorg font encoding library (development)"
+ldesc: "Xorg font encoding library"

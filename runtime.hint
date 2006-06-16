@@ -1,0 +1,5 @@
+category: X11
+requires: cygwin zlib
+external-source: libfontenc
+sdesc: "Xorg font encoding library (runtime)"
+ldesc: "Xorg font encoding library"
