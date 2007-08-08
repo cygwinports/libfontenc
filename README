@@ -3,24 +3,24 @@ libfontenc
 Xorg font encoding library
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  zlib-1.2.3-1
+  cygwin-1.5.24-2
+  zlib-1.2.3-2
 
 Build requirements:
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.23a-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
-  sed-4.1.5-1
-  xorg-util-macros-1.1.2-1
-  xproto-7.0.9-1
-  zlib-1.2.3-1
+  sed-4.1.5-2
+  xorg-util-macros-1.1.5-1
+  xproto-7.0.10-1
+  zlib-1.2.3-2
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -31,26 +31,26 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libfontenc-1.0.3-X-src.tar.bz2
+  unpack libfontenc-1.0.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libfontenc-1.0.3-X.cygport all
+  cygport ./libfontenc-1.0.4-X.cygport all
 
 This will create:
-  /usr/src/libfontenc-1.0.3-X-src.tar.bz2
-  /usr/src/libfontenc-1.0.3-X.tar.bz2
-  /usr/src/libfontenc-devel-1.0.3-X.tar.bz2
-  /usr/src/libfontenc1-1.0.3-X.tar.bz2
+  /usr/src/libfontenc-1.0.4-X-src.tar.bz2
+  /usr/src/libfontenc-1.0.4-X.tar.bz2
+  /usr/src/libfontenc-devel-1.0.4-X.tar.bz2
+  /usr/src/libfontenc1-1.0.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (libfontenc)
-  /usr/share/doc/Cygwin/libfontenc-1.0.3.README
-  /usr/share/doc/libfontenc-1.0.3/COPYING
-  /usr/share/doc/libfontenc-1.0.3/ChangeLog
+  /usr/share/doc/Cygwin/libfontenc-1.0.4.README
+  /usr/share/doc/libfontenc-1.0.4/COPYING
+  /usr/share/doc/libfontenc-1.0.4/ChangeLog
 
 (libfontenc1)
   /usr/bin/cygfontenc-1.dll
@@ -64,6 +64,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.0.4-1 -----
+X11R7.3 version bump.
 
 ----- version 1.0.3-1 -----
 X11R7.2 version bump.
