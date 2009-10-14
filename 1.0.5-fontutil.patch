@@ -1,0 +1,28 @@
+Pushed upstream post-1.0.5.
+
+--- origsrc/libfontenc-1.0.5/configure.ac	2009-08-27 23:13:51.000000000 -0500
++++ src/libfontenc-1.0.5/configure.ac	2009-10-13 19:59:55.385441200 -0500
+@@ -30,6 +30,10 @@ AM_MAINTAINER_MODE
+ # Require xorg-macros: XORG_CWARNFLAGS, XORG_CHANGELOG, XORG_WITH_LINT
+ m4_ifndef([XORG_MACROS_VERSION], [AC_FATAL([must install xorg-macros 1.2 or later before running autoconf/autogen])])
+ XORG_MACROS_VERSION(1.2)
++
++m4_ifndef([XORG_FONT_MACROS_VERSION], [AC_FATAL([must install font-util 1.1 or later before running autoconf/autogen])])
++XORG_FONT_MACROS_VERSION(1.1)
++
+ AM_CONFIG_HEADER(config.h)
+ 
+ # Check for progs
+@@ -37,11 +41,7 @@ AC_PROG_CC
+ AC_PROG_LIBTOOL
+ XORG_CWARNFLAGS
+ 
+-encodingsdir=${libdir}/X11/fonts/encodings
+-AC_ARG_WITH(encodingsdir, AC_HELP_STRING([--with-encodingsdir=<pathname>],
+-	[Path to font encodings]), [encodingsdir="$withval"])
+-ENCODINGSDIR="$encodingsdir"
+-AC_SUBST(ENCODINGSDIR)
++XORG_FONTSUBDIR([ENCODINGSDIR],[encodingsdir],[encodings])
+ 
+ # zlib
+ 

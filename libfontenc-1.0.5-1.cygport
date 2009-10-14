@@ -1,9 +1,9 @@
 inherit xorg
 
+PATCH_URI="1.0.5-fontutil.patch"
+
 PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
 PKG_HINTS="setup runtime devel"
 libfontenc_CONTENTS=	# empty
 libfontenc1_CONTENTS='usr/bin/cygfontenc-1.dll usr/share/doc/'
 libfontenc_devel_CONTENTS='usr/include/ usr/lib/'
-
-CYGCONF_ARGS="--with-encodingsdir=/usr/share/fonts/encodings"
