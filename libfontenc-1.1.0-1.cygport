@@ -1,7 +1,5 @@
 inherit xorg
 
-PATCH_URI="1.0.5-fontutil.patch"
-
 PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
 PKG_HINTS="setup runtime devel"
 libfontenc_CONTENTS=	# empty
