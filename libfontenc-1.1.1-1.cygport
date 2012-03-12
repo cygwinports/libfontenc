@@ -1,7 +1,6 @@
 inherit xorg
 
-PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
-PKG_HINTS="setup runtime devel"
-libfontenc_CONTENTS=	# empty
+PKG_NAMES="${PN}1 ${PN}-devel"
+PKG_HINTS="runtime devel"
 libfontenc1_CONTENTS='usr/bin/cygfontenc-1.dll usr/share/doc/'
 libfontenc_devel_CONTENTS='usr/include/ usr/lib/'
