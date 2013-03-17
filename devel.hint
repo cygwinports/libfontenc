@@ -1,5 +1,0 @@
-category: X11
-requires: libfontenc1 xproto zlib-devel
-external-source: libfontenc
-sdesc: "X.Org font encoding library (development)"
-ldesc: "X.Org font encoding library"

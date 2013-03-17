@@ -1,6 +1,12 @@
 inherit xorg
 
+NAME="libfontenc"
+VERSION=1.1.1
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="X.Org font encoding library"
+DESCRIPTION="X.Org font encoding library"
+
 PKG_NAMES="${PN}1 ${PN}-devel"
-PKG_HINTS="runtime devel"
 libfontenc1_CONTENTS='usr/bin/cygfontenc-1.dll usr/share/doc/'
 libfontenc_devel_CONTENTS='usr/include/ usr/lib/'

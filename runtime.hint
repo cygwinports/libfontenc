@@ -1,5 +1,0 @@
-category: X11
-requires: zlib0
-external-source: libfontenc
-sdesc: "X.Org font encoding library (runtime)"
-ldesc: "X.Org font encoding library"
