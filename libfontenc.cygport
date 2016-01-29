@@ -1,9 +1,9 @@
 inherit xorg
 
 NAME="libfontenc"
-VERSION=1.1.2
+VERSION=1.1.3
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="X.Org font encoding library"
 DESCRIPTION="X.Org font encoding library"
 
